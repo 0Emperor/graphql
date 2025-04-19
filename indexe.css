@@ -1,0 +1,170 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8; 
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#loginForm {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#loginForm input {
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#loginForm input:focus {
+    border-color: #4b7bec;
+    box-shadow: 0 0 5px rgba(75, 123, 236, 0.3);
+}
+
+#loginForm button {
+    padding: 12px 16px;
+    background-color: #4b7bec;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#loginForm button:hover {
+    background-color: #365eeb;
+}
+
+#loginForm #errorMsg {
+    margin-top: 10px;
+    color: red;
+    font-size: 13px;
+    text-align: center;
+}
+
+.username, .fullName, .city {
+    font-size: 14px;
+    color: #555;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4b7bec;
+}
+
+.fullName {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+}
+
+.city {
+    font-size: 14px;
+    color: #888;
+}
+
+.logout {
+    padding: 8px 16px;
+    background-color: #4b7bec;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout:hover {
+    background-color: #365eeb;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header .logout {
+    margin-left: 20px;
+}
+
+.xp {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    background: linear-gradient(135deg, #4b7bec, #a1c4fd);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.projects {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.projects rect {
+    transition: all 0.3s ease;
+}
+
+.projects rect:hover {
+    opacity: 0.8;
+}
+
+.auditRatio {
+    margin: 40px auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
