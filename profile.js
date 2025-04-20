@@ -12,10 +12,10 @@ export const loadMainPage = (data) => {
     skillsSection.append(skills_graph)
     let projectSec = document.createElement('div')
     projectSec.classList.add('projects')
-    projectSec.append(projectsGraph(data.user[0].transactions.filter((v) => v.path.split("/").slice(-2, -1)[0] === "module").slice(0, 5).map(e => { return { value: kb(e.amount), name: e.path.split('/').slice(-1) } })))
+    projectSec.append(projectsGraph(data.xp.filter((v) => v.path.split("/").slice(-2, -1)[0] === "module").slice(0, 5).map(e => { return { value: kb(e.amount), name: e.path.split('/').slice(-1) } })))
     let totalxp = document.createElement('div')
     totalxp.classList.add('xp')
-    totalxp.innerHTML = `<p>curent level:${data.lvl.aggregate.max.amount}</p><p> total xp: ` + Math.round(kb(data.user[0].transactions.reduce((a, c) => a + c.amount, 0))) + " KB</p>"
+    totalxp.innerHTML = `<p>curent level:${data.lvl.aggregate.max.amount}</p><p> total xp: ` + Math.round(kb(data.xp.reduce((a, c) => a + c.amount, 0))) + " KB</p>"
     let auditHolder = document.createElement('div')
     auditHolder.classList.add('auditRatio')
     auditHolder.innerHTML = '<p>audit ratio<p>'

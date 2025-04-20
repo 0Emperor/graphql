@@ -9,14 +9,12 @@ let query = `{
     city : attrs(path: "city")
     totalUp
     totalDown
-  transactions(where: { type: { _eq: "xp" }, event: { object: { name: { _eq: "Module" } } } }, order_by: {createdAt:desc})
+  }
+  xp:transaction(where: { type: { _eq: "xp" }, event: { object: { name: { _eq: "Module" } } } }, order_by: {createdAt:desc})
     {
       path
-      createdAt
       amount
     }
-  }
-   
    lvl: transaction_aggregate(
       where: { type: { _eq: "level" }, event: { object: { name: { _eq: "Module" } } } }
     ) {
